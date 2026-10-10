@@ -1,0 +1,16 @@
+name: check-structure
+
+# 每次推送自動檢查作業 Repo 的結構,讓你在繳交前就能發現問題(只檢查,不修改任何檔案)。
+on:
+  push:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: python tools/check_structure.py

@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# 私密設定(絕對不要放進 Repo)
+.env
+.env.*
+*.secret
+
+# 大型資料與模型權重(改附下載腳本)
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.safetensors
+*.zip
+*.tar
+*.gz
+*.7z
+*.rar
+data/raw/
+
+# 作業系統與編輯器
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
